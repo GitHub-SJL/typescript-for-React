@@ -30,3 +30,16 @@ https://github.com/DefinitelyTyped/DefinitelyTyped
 ## props에 타입 설정
 
 inteface object를 통해 type을 미리 지정해주기
+
+## Optional Props
+
+?를 통해 property의 필수가아닌 선택으로 지정가능
+
+대신 컴포넌트랑 스타일드 컴포넌트랑 옵션인지 필수인지 맞춰야함
+
+**?? (Null 병합 연산자 (Nullish coalescing operator))**
+
+??앞에 값이 null이거나 undefined이면 오른쪽 값을, 그렇지 않으면 왼쪽 값을 반환하는 논리연산자
+
+**default 값 주기**
+타입스크립트 뿐만아니라 ES6 기본문법도 활용하기
