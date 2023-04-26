@@ -26,3 +26,7 @@ styled-components 같은 경우
 
 DefinitelyTyped (type이 정의된 수많은 라이브러리가 모여있음)
 https://github.com/DefinitelyTyped/DefinitelyTyped
+
+## props에 타입 설정
+
+inteface object를 통해 type을 미리 지정해주기
