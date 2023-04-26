@@ -61,3 +61,18 @@ React.FormEvent HTMLInputElement
 onChange 함수가 inputElement에 의해서 실행 될것을 알게된다.
 React.FormEvent HTMLFormElement
 onSubmit 함수가 formElement에 의해서 실행 될것을 알게된다.
+
+## Themes
+
+스타일 컴포넌트 [https://styled-components.com/docs/api#typescript](https://styled-components.com/docs/api#typescript)
+
+1. styled.d.ts 를 만든다. (참고: d.ts 는 declaration file 이라는 뜻이다.)
+
+2. theme.ts (테마) 를 만든다.
+
+3. index.tsx 에 theme.ts에서 만든 테마를 주입한다.
+
+4. App.tsx 에서 props 로 받아 사용한다.
+
+노션정리<br>
+https://pebble-maize-f8d.notion.site/3c043658f83d4391a1311c5f77b821d7
