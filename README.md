@@ -1,46 +1,28 @@
-# Getting Started with Create React App
+# TypeScript for React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React 라이브러리 사용 시 Typescript 초기 설정 방법
 
-## Available Scripts
+## TypeScript 설정
 
-In the project directory, you can run:
+1.  기존 Create React App으로 만든 프로젝트에 타입스크립트 설치
 
-### `npm start`
+`npm install --save typescript @types/node @types/react @types/react-dom @types/jest`
++tsconfig.json파일이 없다면 추가로 설정
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2.  Create React App을 타입스크립트로 시작하기
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+`npx create-react-app my-app --template typescript` 또는
+You are running create-react-app 4.0.3, which is behind the latest release (5.0.0).
+오류가 뜬다면 `npx create-react-app` 명령어로 진행
 
-### `npm test`
+## Styled Components 설치
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+어떤 라이브러리나 패키지는 TypeScript로 만들어진게 아니고 JavaScript 기반으로 만들어졌다.
+그래서 TypeScript는 타입을 모르고 코드가 실행되기 전에 알아야할 필요가 있다.
 
-### `npm run build`
+styled-components 같은 경우
+`npm i @types/styled-components` 명령어를 통해 타입이 선언된 라이브러리를 설치할수 있다.
+따라서 패키지를 설치하고 이러한 type 정의가 된 패키지를 추가로 설치해야 타입스크립트에서 정상적으로 사용할수 있다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+DefinitelyTyped (type이 정의된 수많은 라이브러리가 모여있음)
+https://github.com/DefinitelyTyped/DefinitelyTyped
